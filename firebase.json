@@ -1,0 +1,42 @@
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "smart-village-app-192a5",
+          "appId": "1:1058976895782:android:662b9fc91d0e496eb627e7",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "smart-village-app-192a5",
+          "configurations": {
+            "android": "1:1058976895782:android:662b9fc91d0e496eb627e7",
+            "ios": "1:1058976895782:ios:c697f0b02c10cdc0b627e7",
+            "macos": "1:1058976895782:ios:c697f0b02c10cdc0b627e7",
+            "web": "1:1058976895782:web:de438d320c028be1b627e7",
+            "windows": "1:1058976895782:web:364481b328d41f08b627e7"
+          }
+        }
+      }
+    }
+  },
+  "functions": [
+    {
+      "source": "functions",
+      "codebase": "default",
+      "disallowLegacyRuntimeConfig": true,
+      "ignore": [
+        "node_modules",
+        ".git",
+        "firebase-debug.log",
+        "firebase-debug.*.log",
+        "*.local"
+      ],
+      "predeploy": [
+        "npm --prefix \"$RESOURCE_DIR\" run lint"
+      ]
+    }
+  ]
+}
